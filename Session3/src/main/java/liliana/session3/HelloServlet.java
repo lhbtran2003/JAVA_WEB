@@ -1,4 +1,4 @@
-package liliana.session_3;
+package liliana.session3;
 
 import java.io.*;
 import javax.servlet.http.*;
