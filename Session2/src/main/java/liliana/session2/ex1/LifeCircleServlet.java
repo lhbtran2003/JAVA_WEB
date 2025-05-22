@@ -12,10 +12,19 @@ import java.io.IOException;
 public class LifeCircleServlet extends HttpServlet {
 
     @Override
+    public void init() throws ServletException {
+        System.out.println("Vào init");
+    }
+
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
 
-        RequestDispatcher rd = req.getRequestDispatcher("/ex1.jsp");
-        rd.forward(req, resp);
+        System.out.println("Vào doGet");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("vào destroy.");
     }
 }
