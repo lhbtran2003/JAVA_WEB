@@ -2,15 +2,14 @@ package liliana.session_7.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
-
-public class Product {
+public class User {
     private String name;
-    private int quantity;
-    private double price;
+    private String email;
+    private String phone;
+
 }
