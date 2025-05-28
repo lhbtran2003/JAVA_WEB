@@ -1,7 +1,6 @@
-package liliana.session_7.controller;
+package liliana.session_8.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 

@@ -1,4 +1,4 @@
-package liliana.session_7.configs;
+package liliana.session_8.configs;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

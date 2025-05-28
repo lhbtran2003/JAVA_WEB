@@ -1,4 +1,4 @@
-package liliana.session_7.configs;
+package liliana.session_8.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 //kích hoạt chức năng của spring mvc
 @EnableWebMvc
 //đánh dấu chỗ quét các package khi khởi động ứng dụng
-@ComponentScan(basePackages = "liliana.session_7")
+@ComponentScan(basePackages = "liliana.session_8")
 public class WebConfigs {
 
     @Bean

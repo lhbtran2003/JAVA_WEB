@@ -1,14 +1,15 @@
-package liliana.session_7.model.entity;
-
+package liliana.session_8.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
-public class CartItem {
-    private Product product;
+
+public class Product {
+    private String name;
     private int quantity;
+    private double price;
 }

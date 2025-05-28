@@ -1,7 +1,7 @@
-package liliana.session_7.controller;
+package liliana.session_8.controller;
 
-import liliana.session_7.model.entity.User;
-import liliana.session_7.model.service.UserService;
+import liliana.session_8.model.entity.User;
+import liliana.session_8.model.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

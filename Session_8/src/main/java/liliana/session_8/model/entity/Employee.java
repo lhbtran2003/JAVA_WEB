@@ -1,15 +1,14 @@
-package liliana.session_7.model.entity;
+package liliana.session_8.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
-public class User {
+public class Employee {
     private String name;
     private String email;
-    private String phone;
-
+    private String position;
 }

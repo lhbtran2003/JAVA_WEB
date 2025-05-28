@@ -1,7 +1,6 @@
-package liliana.session_7.model.service;
+package liliana.session_8.model.service;
 
-import liliana.session_7.model.entity.User;
-import org.springframework.context.annotation.Bean;
+import liliana.session_8.model.entity.User;
 import org.springframework.stereotype.Service;
 
 @Service
