@@ -15,20 +15,20 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private ProductService productService;
-   @RequestMapping("/products")
-    public String findAllProducts(Model model) {
-       model.addAttribute("list", productService.getAllProducts());
-       return "listProduct";
-   }
+//   @RequestMapping("/products")
+//    public String findAllProducts(Model model) {
+//       model.addAttribute("list", productService.getAllProducts());
+//       return "listProduct";
+//   }
 
     @GetMapping("/products/add")
     public String showFormAdd(Model model) {
          return "addProduct";
     }
 
-    @PostMapping("/products/add")
-    public String addProduct(@RequestParam("name") String name, @RequestParam("quantity") int quantity, @RequestParam("price") double price, Model model) {
-       productService.addProduct(name, quantity, price);
-       return "redirect:/products";
-    }
+//    @PostMapping("/products/add")
+//    public String addProduct(@RequestParam("name") String name, @RequestParam("quantity") int quantity, @RequestParam("price") double price, Model model) {
+//       productService.addProduct(name, quantity, price);
+//       return "redirect:/products";
+//    }
 }
