@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form th:action="@{/ex3}" method="post" th:object="${user}">
+    Tên: <input th:field="*{name}" type="text"/>
+    <p th:if="${#fields.errors('name')}" th:errors="*{name}"></p>
+    Mật khẩu: <input th:field="*{password}" type="password"/>
+    <p th:if="${#fields.errors('password')}" th:errors="*{password}"></p>
+    Email: <input th:field="*{email}" type="email">
+    <p th:if="${#fields.errors('email')}" th:errors="*{email}"></p>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
