@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form đăng kí</h1>
+<form th:action="@{/register}" method="post" th:object="${user}">
+    <label> Username:
+        <input th:field="*{username}" type="text">
+    </label>
+    <label> Password:
+        <input th:field="*{password}" type="password">
+    </label>
+    <label> Email:
+        <input th:field="*{email}" type="email">
+    </label>
+    <button type="submit">Đăng nhập</button>
+</form>
+</body>
+</html>
