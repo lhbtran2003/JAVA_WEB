@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="content">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Quản lý Sản phẩm</h1>
+  </div>
+
+  <h1>Danh sách sản phẩm</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>DESCRIPTION</th>
+      <th>PRICE</th>
+      <th>STOCK</th>
+      <th>ACTION</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="p: ${products}">
+      <td th:text="${p.id}"></td>
+      <td th:text="${p.productName}"></td>
+      <td th:text="${p.description}"></td>
+      <td th:text="${p.price}"></td>
+      <td th:text="${p.stock}"></td>
+      <td th:href="@{/detail}">Chi tiết</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="content">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+    </div>
+
+    <h2>Chào mừng đến với trang quản trị!</h2>
+    <p>Đây là trang tổng quan, nơi bạn có thể xem các thông tin thống kê nhanh.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Sản phẩm</div>
+                <div class="card-body">
+                    <h5 class="card-title">150</h5>
+                    <p class="card-text">Tổng số sản phẩm trong kho.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Đơn hàng mới</div>
+                <div class="card-body">
+                    <h5 class="card-title">12</h5>
+                    <p class="card-text">Số đơn hàng mới trong ngày.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">Người dùng</div>
+                <div class="card-body">
+                    <h5 class="card-title">852</h5>
+                    <p class="card-text">Tổng số người dùng đã đăng ký.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
