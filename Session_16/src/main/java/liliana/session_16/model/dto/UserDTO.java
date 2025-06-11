@@ -16,6 +16,4 @@ public class UserDTO {
     @NotBlank(message = "Password không được bỏ trống")
     @Size(min = 3, message = "Mat khau phai co it nhat 3 ki tu")
     private String password;
-
-
 }

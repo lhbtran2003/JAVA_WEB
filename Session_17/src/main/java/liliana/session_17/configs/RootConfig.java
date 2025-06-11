@@ -1,8 +1,9 @@
-package liliana.session_16.configs;
+package liliana.session_17.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
@@ -10,7 +11,8 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
-@ComponentScan(basePackages = "liliana.session_16")
+@ComponentScan(basePackages = "liliana.session_17")
+@Import(HibernateConfig.class)
 public class RootConfig {
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
@@ -38,8 +40,8 @@ public class RootConfig {
         return viewResolver;
     }
 
-//    @Bean
-//    public LocalValidatorFactoryBean validator() {
-//        return new LocalValidatorFactoryBean();
-//    }
+    @Bean
+    public LocalValidatorFactoryBean validator() {
+        return new LocalValidatorFactoryBean();
+    }
 }
