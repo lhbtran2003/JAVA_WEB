@@ -28,6 +28,7 @@ public class AuthController {
     @PostMapping("/ex1")
     public String ex1(@Valid @ModelAttribute("customer")Customer customer, BindingResult bind, Model model){
         if (bind.hasErrors()) {
+            model.addAttribute("customer", customer);
             return "ex1/registerForm";
         }
 
@@ -46,6 +47,7 @@ public class AuthController {
     @PostMapping("/ex2")
     public String ex2(@Valid @ModelAttribute("customer") CustomerDTO customerDto, BindingResult bind, Model model){
         if (bind.hasErrors()) {
+            model.addAttribute("customer", customerDto);
             return "ex2/loginForm";
         }
         Customer customer = customerService.login(customerDto.getUsername(), customerDto.getPassword());
